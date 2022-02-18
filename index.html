@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandemic Medical Help Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+  <div id="navbar">
+      <div id="Logo">
+          <p>Pandemic<span class="Logo_txt" >Protal</span> <span id="sun">&#9728;</span></p>
+      </div>
+      <ul>
+          <li><a class="nav_txt" href="#Home">Home</a></li>
+          <li><a class="nav_txt" href="Med.html">Medicines</a></li>
+          <li><a class="nav_txt" href="Donar.html">Donation</a></li>
+          <li><a class="nav_txt" href="Log.html">Log<span class="nav_list"> In </span></a></li>
+          <li><a class="nav_txt" href="Log.html">Sign <span class="nav_list"> In </span></a></li>
+      </ul>
+      <form action="med.html">
+          <input type="search" name="" id="search" placeholder="Search for medicines, blood groups, plasma">
+      </form>
+  </div>  
+</header>
+
+  <!-- Home starts  -->
+  <main>
+   <span id="ham">&#9776;</span>
+    <span id="cross">&#10005;</span>
+  <section id="Home">
+      <div class="info">
+          <div class="text1">Hi Everybody,</div>
+          <div class="text2">
+               We are <span class="auto-input"></span>
+        </div>
+          <div class="text3">
+              <p>Lorem ipsum dolor sit amet, consectetur </p>
+              <p>Lorem, ipsum dolor sit amet consectetur  </p>
+          </div>
+          <div class="button-home">
+                <button> <a class="btn-home" href="Log.html">Sign In</a></button>
+          </div>
+      </div>
+      <div class="img-home">
+          <img src="Images/home.jpeg" alt="">
+      </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  </main>
+
+  <!-- Home Ends  -->
+  <footer>
+    <h1>Designed and Created ©<span class="auto-input2"></span></h1>
+  </footer>
+</body>
+<script>
+    let nav = document.getElementById('navbar')
+window.addEventListener('scroll',function(){
+
+
+
+if(window.pageYOffset>0)
+{
+nav.classList.add('scroll')
+}
+else{
+    nav.classList.remove('scroll')
+}
+
+})
+var typed = new Typed(".auto-input", {
+        strings: ['from Pandemic Medical Help Portal ', 'the covid protectors ', 'here to help you from Covid 19'],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true,
+    });
+    var typed = new Typed(".auto-input2", {
+        strings: ['Awaizalam.I.Patel'],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true,
+    });
+
+
+    let sun= document.getElementById('sun');
+
+    sun.onclick=function(){
+        document.body.classList.toggle("white-theme");
+    }
+
+    let ham = document.getElementById('ham')
+    let cross = document.getElementById('cross')
+    ham.onclick = function(){
+       nav.classList.toggle("navGo");
+       if(nav.classList.contains("navGo")){
+           ham.style.display="none"
+           cross.style.display="block"
+       }
+        else{
+           ham.style.display="block"
+           cross.style.display="none"
+       }
+    }
+    cross.onclick = function(){
+       nav.classList.toggle("navGo");
+       if(nav.classList.contains("navGo")){
+           ham.style.display="none"
+           cross.style.display="block"
+       }
+        else{
+           ham.style.display="block"
+           cross.style.display="none"
+       }
+    }
+</script>
+</html>

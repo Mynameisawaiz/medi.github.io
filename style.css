@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color:black;
+    --secondary-color:white;
+}
+.white-theme{
+    --primary-color:white;
+    --secondary-color:black;
+    --third-color:#464441;
+}
+.navGo{
+    transform: translateX(450px);
+    transition: 1s;
+}
+#ham{
+    font-size: 31px;
+    position: fixed;
+    color: var(--secondary-color);
+    z-index: 1;
+    display: none;
+}
+#cross{
+    font-size: 31px;
+    position: fixed;
+    color: var(--secondary-color);
+    z-index: 1;
+    display: none;
+}
+.scroll{
+    background-color: rgb(0, 110, 255);
+}
+.scroll #sun{
+    color: var(--secondary-color);
+}
+.scroll .nav_list{
+   color: var(--secondary-color);
+}
+.scroll .Logo_txt{
+   color: var(--secondary-color);
+}
+.scroll #icon{
+   color: var(--secondary-color);
+}
+.scroll .nav_txt:hover{
+    transition: 0.5s;
+    color: var(--primary-color);
+    }
+/* Nav starts  */
+  #navbar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 8vh; 
+} 
+.nav_list{
+    color: rgb(0, 110, 255);
+}
+#sun{
+    color: rgb(0, 110, 255);
+    cursor: pointer;
+    padding: 0 70px 0 21px;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.nav_txt {
+    text-decoration: none;
+    padding: 0 23px;
+    color: var(--secondary-color);
+    font-size: 25px;
+    position: relative;
+}
+.nav_txt:hover{
+transition: 0.5s;
+color: rgb(0, 110, 255);
+}
+#Logo p{
+    font-size: 35px;
+    padding: 0 20px 0 10px;
+    color: var(--secondary-color);
+}
+.Logo_txt{
+    color: rgb(0, 110, 255);
+}
+#search  {
+    height: 4vh;
+    border-radius: 7px;
+    width: 60vh;
+    font-size: 25px;
+    padding: 0 0 0 10px;
+    color: rgb(0, 110, 255);
+    border: 5px solid var(--third-color);
+    margin: 0 0 0 100px;
+}
+/* Nav ends */
+
+
+
+/* Home starts */
+#Home{
+    height:100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.info{
+    width: 70%;
+    height: 91vh;
+    color: white;
+    font-size: 65px;
+}
+.img-home {
+    width: 30%;
+    height: 91vh;
+    padding: 70px 0 0 0;
+}
+.img-home img{
+    height: 90vh;
+}
+.text1{ 
+margin: 250px 0 18px 250px;
+color: var(--secondary-color);
+}
+.text2{ 
+margin: 0px 0 18px 250px;
+color: var(--secondary-color);
+}
+.text3 p{
+    font-size: 25px;
+    margin: 0px 0 0px 250px;
+    color: var(--secondary-color);
+}
+.text3{
+    font-size: 25px;
+    margin: 0 0 18px 0;
+}
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size:35px;
+}
+button {
+    height: 6vh;
+    width: 14%;
+    border: 2px solid rgb(0, 110, 255);
+    background-color: rgb(0, 110, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0px 0 0 250px;
+    transform: scale(1.05px);
+}
+button:hover{
+background-color: transparent;
+}
+.btn-home:hover{
+color: rgb(0, 110, 255);
+}
+.auto-input{
+    font-size: 55px;
+    color: rgb(0, 110, 255);
+}
+footer{
+   text-align: center;
+}
+/* Home Ends  */
+.auto-input2{
+    font-size: 35px;
+    color: rgb(0, 110, 255);
+}
+
+    /* Extra Media Query starts  */
+    @media screen and (max-width: 1656px) and (min-width:1611px){
+        .nav_txt {
+           text-decoration: none;
+           padding: 0 23px;
+           color: var(--secondary-color);
+           font-size: 20px;
+           position: relative;
+       }
+   }
+    /* Extra Media Query ends  */
+
+/* Tablet Look starts  */
+
+@media screen and (max-width: 1610px) and (min-width:900px) {
+    body {
+      background-color: white;
+    }
+    #Home{
+        height:150vh;
+        background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #navbar {
+        width: 28%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(0, 110, 255);
+        flex-direction: column;
+        left: -450px;
+    }
+    .nav_list{
+        color: var(--secondary-color);
+    }
+    #ham{
+        font-size: 31px;
+        position: fixed;
+        color: var(--secondary-color);
+        z-index: 1;
+        display: block;
+    }
+    #cross{
+        font-size: 31px;
+        position: fixed;
+        color: var(--secondary-color);
+        z-index: 1;
+        display: none;
+    }
+    #Logo p {
+        font-size: 35px;
+        padding: 83px 0px 0px 17px;
+        color: var(--secondary-color);
+    }
+    #sun{
+        color: rgb(0, 110, 255);
+        cursor: pointer;
+        padding: 0 70px 0 21px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        list-style: none;
+        padding: 35px 0 0 0;
+    }
+    .nav_txt {
+        text-decoration: none;
+        margin: 0 0 0 30px;
+        color: var(--secondary-color);
+        font-size: 25px;
+        position: relative;
+    }
+    #search {
+        height: 4vh;
+        border-radius: 7px;
+        width: 25vh;
+        font-size: 15px;
+        padding: 0 0 0 10px;
+        color: rgb(0, 110, 255);
+        border: 5px solid var(--third-color);
+        margin: 23px 0 0 -16px;
+    }
+    .Logo_txt {
+        color: var(--secondary-color);
+    }
+    #sun{
+        color: var(--secondary-color);
+        cursor: pointer;
+        padding: 0 70px 0 21px;
+    }
+    .info {
+        width: 70%;
+        height: 91vh;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+    .auto-input {
+        font-size: 40px;
+        color: rgb(0, 110, 255);
+    }
+    .text1 {
+        margin: 250px 0 0px 23px;
+        color: var(--secondary-color);
+    }
+    .text2 {
+        margin: 20px 0 0px 23px;
+        color: var(--secondary-color);
+    }
+    .text3 {
+        margin: 20px 0 0px 23px;
+        color: var(--secondary-color);
+    }
+    .text3 p{
+        margin: 0px 0 0px 0px;
+        color: var(--secondary-color);
+    }
+    .btn-home{
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 25px;
+    }
+    button {
+        height: 7vh;
+        width: 14%;
+        border: 2px solid rgb(0, 110, 255);
+        background-color: rgb(0, 110, 255);
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 22px 0 0 18px;
+    }
+    .img-home {
+        width: 30%;
+        height: 92vh;
+        padding: 70px 0 0 0;
+        margin: 0 -36px 0 -103px;
+    }
+    .img-home img {
+        height: 75vh;
+    }
+    .img-home {
+        width: 30%;
+        height: 92vh;
+        padding: 70px 0 0 0;
+        margin: -234px 0px 0 -5px;
+    }
+  } 
+
+/* Tablet Look ends*/
+
+
+  /* Mobile Look1 starts */
+@media screen and (max-width: 899px) and (min-width:542px) {
+    #navbar {
+        width: 28%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(0, 110, 255);
+        flex-direction: column;
+        left: -450px;
+    }
+      #Home{
+          height:150vh;
+          background-color: var(--primary-color);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+      }
+      
+      .nav_list{
+          color: var(--secondary-color);
+      }
+      #ham{
+          font-size: 31px;
+          position: fixed;
+          color: var(--secondary-color);
+          z-index: 1;
+          display: block;
+      }
+      #cross{
+          font-size: 31px;
+          position: fixed;
+          color: var(--secondary-color);
+          z-index: 1;
+          display: none;
+      }
+      #Logo p {
+        font-size: 21px;
+        padding: 83px 0px 0px 10px;
+        color: var(--secondary-color);
+    }
+      #sun{
+          color: rgb(0, 110, 255);
+         cursor: pointer;
+          padding: 0 70px 0 21px;
+      }
+      ul {
+          display: flex;
+          flex-direction: column;
+      }
+      li {
+          list-style: none;
+          padding: 35px 0 0 0;
+      }
+      .nav_txt {
+        text-decoration: none;
+        margin: 0 0 0 25px;
+        color: var(--secondary-color);
+        font-size: 21px;
+        position: relative;
+    }
+    #search {
+        height: 4vh;
+        border-radius: 7px;
+        width: 17vh;
+        font-size: 15px;
+        padding: 0 0 0 10px;
+        color: rgb(0, 110, 255);
+        border: 5px solid var(--third-color);
+        margin: 23px 0 0 -6px;
+    }
+      .Logo_txt {
+          color: var(--secondary-color);
+      }
+      #sun{
+          color: var(--secondary-color);
+          cursor: pointer;
+          padding: 0 70px 0 21px;
+      }
+      .info {
+          width: 70%;
+          height: 91vh;
+          color: white;
+          font-size: 30px;
+          text-align: center;
+      }
+      .auto-input {
+          font-size: 25px;
+          color: rgb(0, 110, 255);
+      }
+      .text1 {
+          margin: 250px 0 0px -40px;
+          color: var(--secondary-color);
+      }
+      .text2 {
+          margin: 20px 0 0px -40px;
+          color: var(--secondary-color);
+      }
+      .text3 {
+          margin: 20px 0 0px -40px;
+          color: var(--secondary-color);
+      }
+      .text3 p{
+          margin: 0px 0 0px 0px;
+          color: var(--secondary-color);
+          font-size: 18px;
+      }
+      .btn-home{
+          text-decoration: none;
+          color: var(--secondary-color);
+          font-size: 25px;
+      }
+      button {
+          height: 7vh;
+          width: 40%;
+          border: 2px solid rgb(0, 110, 255);
+          background-color: rgb(0, 110, 255);
+          cursor: pointer;
+          border-radius: 10px;
+          margin: 22px 0 0 18px;
+      }
+      .img-home {
+          width: 30%;
+          height: 92vh;
+          padding: 70px 0 0 0;
+          margin: 0 -36px 0 -200px;
+      }
+      .img-home img {
+          height: 75vh;
+      }
+      .img-home {
+          width: 30%;
+          height: 92vh;
+          padding: 70px 0 0 0;
+          margin: -234px 0px 0 -103px;
+      }
+    } 
+  /* Mobile Look1 ends  */
+
+
+  @media screen and (max-width: 541px){
+    #navbar {
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(0, 110, 255);
+        flex-direction: column;
+        left: -540px;
+    }
+    #ham {
+        font-size: 31px;
+        position: fixed;
+        color: var(--secondary-color);
+        z-index: 1;
+        display: block;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        list-style: none;
+        padding-bottom: 44px;
+        text-align: center;
+    }
+    #search {
+        height: 6vh;
+        border-radius: 7px;
+        width: 24vh;
+        font-size: 12px;
+        padding: 0 0 0 10px;
+        color: rgb(0, 110, 255);
+        border: 5px solid var(--third-color);
+        margin: 0 0 0 40px;
+    }
+    #Logo p {
+        font-size: 30px;
+        padding: 140px 20px 37px 144px;
+        color: var(--secondary-color);
+        text-align: center;
+    }
+    #Home {
+        height: 114vh;
+        background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info {
+        width: 70%;
+        height: 91vh;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+    .text1 {
+        margin: 60px 0 9px 0;
+        color: var(--secondary-color);
+    }
+    .text2 {
+        margin: 0px 0 18px 0px;
+        color: var(--secondary-color);
+    }
+    .auto-input {
+        font-size: 30px;
+        color: rgb(0, 110, 255);
+    }
+    .text3 p {
+        font-size: 8px;
+        margin: 0px 0 0px 0;
+        color: var(--secondary-color);
+    }
+    .text3 p {
+        font-size: 17px;
+        margin: 0px 0 0px 0;
+        color: var(--secondary-color);
+    }
+    button {
+        height: 6vh;
+        width: 33%;
+        border: 2px solid rgb(0, 110, 255);
+        background-color: rgb(0, 110, 255);
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 0px 0 0 0px;
+        transform: scale(1.05px);
+    }
+    a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 20px;
+    }
+    .img-home {
+        width: 53%;
+        height: 150vh;
+        margin: -78px 0 0 0;
+    }
+    .img-home img {
+        height: 46vh;
+    }
+    .Logo_txt{
+        color: white;
+    }
+  }
